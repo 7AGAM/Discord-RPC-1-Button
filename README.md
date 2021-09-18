@@ -9,7 +9,7 @@ A custom Discord rich presnece with 1 button!
 1. Download the folder
 2. Open it with a code editor like VSCode
 3. Create a Application on Discord Developer Portal (Look for YouTube Videos to create a Application with a rich presence)
-4. Open the config.json file and fill in your datas
+4. Open the *.env* and the *app.js* file and fill in your datas
 5. Navigate to the folder in your command prompt and run the command: **npm i**
 6. Start the code with **node index.js** in the command prompt *or* open the **start.bat** file
 
