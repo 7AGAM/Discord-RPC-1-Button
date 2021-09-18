@@ -6,14 +6,14 @@ require('dotenv').config(); // Requiring the content of our .env file.
 (async () => {
     client.on('ready', async () => { // Calling the ready event.
         await client.setActivity({ // Setting the Rich Presence Activity based on what is passed in here.
-            buttons: [{ label: "Click to join Game", url: "https://www.youtube.com/watch?v=iik25wqIuFo" }],
-            details: "Krunker Browsergame",
-            largeImageKey: "krunker",
-            largeImageText: "Krunker.io"
+            buttons: [{ label: "Button", url: "Button URL" }],
+            details: "",
+            largeImageKey: "",
+            largeImageText: ""
         }).catch(err => console.log(err));
 
         console.log("Sucessfully enabled Discord Rich Presence!");
     });
 
-    await client.login({ clientId: process.env.applicationID }).catch(console.error); // Logging into our application.
+    await client.login({ clientId: process.env.clientID }).catch(console.error); // Logging into our application.
 })();
